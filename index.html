@@ -2,9 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Empty Page</title>
+    <title>Number Guessing Game</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #0f0f0f;
+            color: #00ff00;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        
+        input[type="text"] {
+            padding: 8px;
+            font-size: 1em;
+            border: 2px solid #00ff00;
+            background-color: #0f0f0f;
+            color: #00ff00;
+        }
+        
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #00ff00;
+        }
+        
+        button {
+            padding: 8px 16px;
+            font-size: 1em;
+            background-color: #00ff00;
+            color: #0f0f0f;
+            border: none;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #00cc00;
+        }
+        
+        #message {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
+    <h1>Number Guessing Game</h1>
+    <p>Guess a number between 1 and 10:</p>
+    <input type="text" id="guessInput">
+    <button onclick="checkGuess()">Submit</button>
+    <p id="message"></p>
 
+    <script>
+        const randomNumber = Math.floor(Math.random() * 10) + 1;
+
+        function checkGuess() {
+            const guess = parseInt(document.getElementById('guessInput').value);
+            const message = document.getElementById('message');
+
+            if (isNaN(guess) || guess < 1 || guess > 10) {
+                message.textContent = 'Please enter a valid number between 1 and 10.';
+            } else if (guess === randomNumber) {
+                message.textContent = 'Congratulations! You guessed the correct number!';
+            } else {
+                message.textContent = `Sorry, the correct number was ${randomNumber}. Try again!`;
+            }
+        }
+    </script>
 </body>
 </html>
