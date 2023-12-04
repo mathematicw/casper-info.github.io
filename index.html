@@ -77,9 +77,9 @@
             if (isNaN(guess) || guess < 1 || guess > 10) {
                 message.textContent = '';
             } else if (guess === randomNumber) {
-                message.textContent = '';
+                message.textContent = 'good';
             } else {
-                message.textContent = `${randomNumber}`;
+                message.textContent = `try again`;
             }
         }
     </script>
