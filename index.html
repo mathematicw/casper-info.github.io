@@ -75,11 +75,11 @@
             const message = document.getElementById('message');
 
             if (isNaN(guess) || guess < 1 || guess > 10) {
-                message.textContent = 'Please enter a valid number between 1 and 10.';
+                message.textContent = '';
             } else if (guess === randomNumber) {
-                message.textContent = 'Congratulations! You guessed the correct number!';
+                message.textContent = '';
             } else {
-                message.textContent = `Sorry, the correct number was ${randomNumber}. Try again!`;
+                message.textContent = `${randomNumber} Try again!`;
             }
         }
     </script>
