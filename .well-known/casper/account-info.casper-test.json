@@ -30,7 +30,7 @@
     "email": "",
     "branding": {
       "logo": {
-        "png_256": "",
+        "png_256": ".gitignore/casper-info-logo.jpg",
         "png_1024": "",
         "svg": ""
       }
