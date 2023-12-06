@@ -1,1 +1,71 @@
-
+{
+  "owner": {
+    "name": "AIU",
+    "description": "The earliest validators of the network! Overspec servers!",
+    "type": [
+      "validator"
+    ],
+    "identity": {
+      "ownership_disclosure_url": "https://casper-info.cloud",
+      "casper_association_kyc_url": "",
+      "casper_association_kyc_onchain": ""
+    },
+    "resources": {
+      "code_of_conduct_url": "",
+      "terms_of_service_url": "",
+      "privacy_policy_url": "",
+      "other": [
+        {
+          "name": "About Us",
+          "url": ""
+        }
+      ]
+    },
+    "affiliated_accounts": [
+      {
+        "public_key": "01ab7ad70df3b601c443623bdf4a414c477a5312350bdcc9e3e09e3727a3afa66a"
+      }
+    ],
+    "website": "https://casper-info.cloud",
+    "email": "",
+    "branding": {
+      "logo": {
+        "png_256": "",
+        "png_1024": "",
+        "svg": ""
+      }
+    },
+    "location": {
+      "name": "Bangkok",
+      "country": "Thailand",
+      "latitude": 0,
+      "longitude": 0
+    },
+    "social": {
+      "keybase": "",
+      "telegram": "",
+      "twitter": "",
+      "github": "",
+      "youtube": "",
+      "facebook": "",
+      "medium": "",
+      "reddit": "",
+      "wechat": ""
+    }
+  },
+  "nodes": [
+    {
+      "public_key": "01ab7ad70df3b601c443623bdf4a414c477a5312350bdcc9e3e09e3727a3afa66a",
+      "description": "Proc:AMD Ryzen-9 24Cores; RAM:128G; 2T NVME",
+      "location": {
+        "name": "Falkenstein",
+        "country": "GE",
+        "latitude": 50.4778,
+        "longitude": 12.3715
+      },
+      "functionality": [
+        "validator"
+      ]
+    }
+  ]
+}
